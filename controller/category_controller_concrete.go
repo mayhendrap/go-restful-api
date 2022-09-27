@@ -14,7 +14,7 @@ type CategoryControllerConcrete struct {
 	CategoryService service.CategoryServiceContract
 }
 
-func NewCategoryController(categoryService service.CategoryServiceContract) CategoryControllerContract {
+func NewCategoryController(categoryService service.CategoryServiceContract) *CategoryControllerConcrete {
 	return &CategoryControllerConcrete{
 		CategoryService: categoryService,
 	}

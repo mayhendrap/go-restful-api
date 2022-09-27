@@ -18,7 +18,7 @@ type CategoryServiceConcrete struct {
 	Validate           *validator.Validate
 }
 
-func NewCategoryService(categoryRepository repository.CategoryRepositoryContract, DB *sql.DB, validate *validator.Validate) CategoryServiceContract {
+func NewCategoryService(categoryRepository repository.CategoryRepositoryContract, DB *sql.DB, validate *validator.Validate) *CategoryServiceConcrete {
 	return &CategoryServiceConcrete{
 		CategoryRepository: categoryRepository,
 		DB:                 DB,

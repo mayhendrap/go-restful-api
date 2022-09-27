@@ -11,7 +11,7 @@ import (
 type CategoryRepositoryConcrete struct {
 }
 
-func NewCategoryRepository() CategoryRepositoryContract {
+func NewCategoryRepository() *CategoryRepositoryConcrete {
 	return &CategoryRepositoryConcrete{}
 }
 
